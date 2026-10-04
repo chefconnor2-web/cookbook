@@ -1,0 +1,38 @@
+# ---------------------------------------------------------------
+# Book settings. Edit these, then run:  python3 build.py
+# ---------------------------------------------------------------
+title: "My Kitchen"
+subtitle: "Recipes from a Life at the Stove"
+author: "Your Name"
+year: 2026
+isbn: ""                # leave blank to use Amazon's free KDP ISBN
+publisher: ""           # optional imprint name
+
+# Amazon KDP print options -- must match what you choose on KDP.
+trim: "8x10"            # inches, WIDTHxHEIGHT. Common: 6x9, 7x10, 8x10, 8.5x11
+paper: "white"          # white | cream   (cream is black & white only)
+ink: "bw"               # bw | standard-color | premium-color
+
+# Cover (cover.pdf). Leave front_image blank for a plain colour cover.
+cover:
+  front_image: ""       # e.g. images/cover.jpg (needs bleed, 300 dpi)
+  background: "#2f3b2f"
+  text_color: "#f4efe6"
+  back_text: >
+    Write a short blurb for the back cover here: who you are, what
+    kind of food this is, and why someone should cook from it.
+
+# Optional front-matter pages (markdown files). Delete a line to skip it.
+dedication: "front/dedication.md"
+introduction: "front/introduction.md"
+
+# Chapters in order, each listing its recipe files in order.
+chapters:
+  - title: "Starters"
+    intro: "Small plates to open a meal."
+    recipes:
+      - recipes/roast-tomato-soup.md
+  - title: "Mains"
+    intro: "The heart of the table."
+    recipes:
+      - recipes/braised-short-ribs.md
